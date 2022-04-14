@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar {
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  position: fixed;
+  background-image: linear-gradient(to right, gray, black);
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+li,
+a {
+  text-decoration: none;
+}
+
+.home {
+  align-items: center;
+  text-align: center;
+  left: 12px;
+  position: fixed;
+  visibility: hidden;
+}
+
+.second__block {
+  padding: 10px;
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-btn-outline {
+  color: #e8e1f2;
+  font-size: 17px;
+  padding: 7px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.nav-btn-outline:hover {
+  color: white;
+}
+
+.nav_ico {
+  font-size: 1.4rem;
+  margin: 8px;
+  color: #ded4ec;
+}
+
+.nav_ico:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+.navbar__right {
+  display: none;
+  height: fit-content;
+  list-style-type: none;
+  margin-top: 50px;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+.toggle__box {
+  position: fixed;
+  visibility: hidden;
+  right: 15px;
+}
+
+.Span {
+  font-size: 20px;
+  color: gold;
+}
+
+.ln {
+  font-size: 18px;
+  align-items: center;
+  margin-left: 20px;
+  font-weight: 500px;
+  padding-right: 500px;
+}
+
+.ln:hover {
+  color: black;
+}
+
+.navbar__title {
+  font-size: 1.5rem;
+  align-items: center;
+  padding-right: 20px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  margin-left: 80px;
+}
+
+.ul__box li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+#search_box {
+  height: 27px;
+  background-color: #262626;
+  border: 1px solid #ffe484;
+  border-radius: 3px;
+}
+.nav__btn {
+  border: 1px solid #ffe484;
+  border-radius: 4px;
+  color: #ffe484;
+  background-color: #262626;
+  font-size: 15px;
+  vertical-align: middle;
+  margin: 0px 0px 0px 16px;
+  padding: 6px 12px;
+  font-weight: 600;
+}
+
+.nav__btn:hover {
+  background-color: #ffe484;
+  color: black;
+}
+
+@media (max-width: 500px) {
+  .Span {
+    font-size: 22px;
+    font-weight: 1000;
+  }
+}
+
+@media (max-width: 565px) {
+  .ln {
+    display: none;
+  }
+}
+
+@media (max-width: 765px) {
+  .navbar__container {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .home {
+    visibility: visible;
+  }
+
+  .navbar__title {
+    margin: 0;
+  }
+
+  .ln {
+    padding-right: 0px;
+  }
+
+  .nav-btn-outline {
+    padding: 2px;
+    margin: 10px;
+    justify-content: center;
+    color: silver;
+  }
+
+  .navbar__icons {
+    display: none;
+  }
+
+  .upper_content {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .navbar__right {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .ul__box {
+    list-style-type: none;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .ul__box li a {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .toggle__box {
+    visibility: visible;
+    cursor: pointer;
+  }
+
+  .toggle__btn {
+    color: silver;
+    opacity: 0.5;
+    font-size: 23px;
+  }
+}
