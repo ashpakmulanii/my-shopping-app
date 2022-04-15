@@ -27,6 +27,9 @@ a {
   position: fixed;
   visibility: hidden;
 }
+.log {
+  margin-left: 50px;
+}
 
 .second__block {
   padding: 10px;

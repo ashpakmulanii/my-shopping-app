@@ -51,6 +51,16 @@ export const Header = () => {
           <input type="text" id="search_box" />
           <button className="nav__btn">Search</button>
         </div>
+        <div className="log">
+          <a className="nav-btn-outline">
+            <i className="fa fa-shopping-cart" style={{ margin: "5px" }} />
+            Cart
+          </a>
+          <a className="nav-btn-outline">
+            <i className="fas fa-user" style={{ margin: "5px" }} />
+            Log In
+          </a>
+        </div>
 
         {state ? (
           <div className="navbar__right">
