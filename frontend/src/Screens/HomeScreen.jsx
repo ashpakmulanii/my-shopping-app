@@ -6,13 +6,18 @@ import "../App.css";
 export const HomeScreen = () => {
   return (
     <div className="HomeScreen">
-      <div className="gallery">
-        {products.map((product) => (
-          <div key={product._id} className="content">
-            <Product product={product} />
-          </div>
-        ))}
-      </div>
+      <fieldset>
+        <legend>
+          <h2>Latest Products</h2>
+        </legend>
+        <div className="gallery">
+          {products.map((product) => (
+            <div key={product._id} className="content">
+              <Product product={product} />
+            </div>
+          ))}
+        </div>
+      </fieldset>
     </div>
   );
 };

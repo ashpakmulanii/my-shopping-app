@@ -1,15 +1,19 @@
 import React from "react";
 import "../App.css";
 import { Ratings } from "./Ratings";
+import { Link } from "react-router-dom";
 
 export const Product = ({ product }) => {
   return (
     <div>
-      <a href={`/public/${product._id}`}>
+      <Link to={`/product/${product._id}`}>
         <img src={product.image} alt="" />
-      </a>
+      </Link>
 
-      <h3>{product.name}</h3>
+      <Link to={`/product/${product._id}`}>
+        <h3>{product.name}</h3>{" "}
+      </Link>
+
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       <div className="Flex">
         <Ratings

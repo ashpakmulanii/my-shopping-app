@@ -11,15 +11,16 @@ import {
 } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import "./Header.css";
+import { Link } from "react-router-dom";
 export const Header = () => {
   const [state, setState] = React.useState(false);
   return (
     <nav className="navbar">
       <div className="navbar__container">
         <div className="home">
-          <a href="#">
+          <Link to="/">
             <FaHome id="HomeIcon" />
-          </a>
+          </Link>
         </div>
         <ul className="navbar__left">
           <div className="navbar__title">
@@ -30,36 +31,37 @@ export const Header = () => {
           </div>
         </ul>
         <ul className="ln">
-          <a
+          <Link
             className="nav-btn-outline"
             style={{ fontWeight: "450", color: "white" }}
-            href="#"
+            to="/"
           >
             Home
-          </a>
-          <a className="nav-btn-outline" style={{ color: "#F9F7FC" }} href="#">
-            Achievements
-          </a>
-          <a className="nav-btn-outline" href="#">
-            Projects
-          </a>
-          <a className="nav-btn-outline" href="#">
-            Skills
-          </a>
+          </Link>
+          <Link
+            className="nav-btn-outline"
+            style={{ color: "#F9F7FC" }}
+            to="about"
+          >
+            About Us
+          </Link>
+          <Link className="nav-btn-outline" to="contact">
+            Contact{" "}
+          </Link>
         </ul>
         <div className="search_section">
           <input type="text" id="search_box" />
           <button className="nav__btn">Search</button>
         </div>
         <div className="log">
-          <a className="nav-btn-outline">
+          <Link className="nav-btn-outline" to="cart">
             <i className="fa fa-shopping-cart" style={{ margin: "5px" }} />
             Cart
-          </a>
-          <a className="nav-btn-outline">
+          </Link>
+          <Link className="nav-btn-outline" to="login">
             <i className="fas fa-user" style={{ margin: "5px" }} />
             Log In
-          </a>
+          </Link>
         </div>
 
         {state ? (

@@ -3,6 +3,9 @@
   padding: 0;
   font-family: "Ubuntu", sans-serif;
 }
+.PaddingTop {
+  padding-top: 100px;
+}
 .navbar {
   top: 0;
   width: 100%;
