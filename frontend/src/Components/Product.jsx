@@ -22,7 +22,7 @@ export const Product = ({ product }) => {
           color={"gold"}
         />
       </div>
-      <h6>₹ {parseInt(product.price * 63.07)} </h6>
+      <h6>₹ {product.price} </h6>
       <button className="buy-1">Buy Now</button>
     </div>
   );

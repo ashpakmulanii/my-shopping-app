@@ -28,7 +28,7 @@ export const ProductScreen = () => {
                 {product.countInStock > 0 ? "In Stocks" : "Out of Stocks"}
               </li>
               <li>
-                <strong>Price</strong> : ₹ {parseInt(product.price * 63.6)}
+                <strong>Price</strong> : ₹ {product.price}
               </li>
             </ul>
           </div>
@@ -45,7 +45,7 @@ export const ProductScreen = () => {
             color={"gold"}
           />
           <h1>
-            <strong>₹ {parseInt(product.price * 63.6)}</strong>
+            <strong>₹ {product.price}</strong>
           </h1>
           <p>
             Product branch is {""}
