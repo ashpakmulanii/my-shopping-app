@@ -10,11 +10,10 @@ export const ProductScreen = () => {
   useEffect(() => {
     async function fetchProduct() {
       const { data } = await axios.get(`/api/products/${id}/`);
-      console.log(data);
       setProduct(data);
     }
     fetchProduct();
-  });
+  }, [product]);
 
   return (
     <div className="ProductScreen">
