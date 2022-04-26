@@ -51,6 +51,19 @@ export const ProductScreen = () => {
             <strong>{product.brand} </strong> with {product.countInStock}{" "}
             available stocks.
           </p>
+          <div className="Count_Dropdown" style={{ paddingBottom: "15px" }}>
+            <label for="cars" style={{ paddingRight: "10px", opacity: "0.7" }}>
+              Quantity :
+            </label>
+            <select name="cars" id="cars">
+              {[...Array(product.countInStock).keys()].map((x) => (
+                <option key={x + 1} value={x + 1}>
+                  {x + 1}
+                </option>
+              ))}
+            </select>
+          </div>
+
           {product.countInStock > 0 ? (
             <button>Add to Cart</button>
           ) : (

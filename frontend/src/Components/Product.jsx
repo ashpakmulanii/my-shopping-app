@@ -11,7 +11,7 @@ export const Product = ({ product }) => {
       </Link>
 
       <Link to={`/product/${product._id}`}>
-        <h3>{product.name}</h3>{" "}
+        <h3>{product.name}</h3>
       </Link>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>

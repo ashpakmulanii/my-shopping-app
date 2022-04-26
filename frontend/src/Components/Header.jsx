@@ -9,6 +9,7 @@ import {
   FaLinkedin,
   FaCartPlus,
 } from "react-icons/fa";
+
 import { AiOutlineClose } from "react-icons/ai";
 import "./Header.css";
 import { Link } from "react-router-dom";
@@ -26,7 +27,7 @@ export const Header = () => {
           <div className="navbar__title">
             <span className="Span">
               <FaCartPlus />
-              MyShop{" "}
+              MyShop
             </span>
           </div>
         </ul>
