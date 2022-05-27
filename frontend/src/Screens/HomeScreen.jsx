@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import products from "../products";
 import { Product } from "../Components/Product";
 import { useDispatch, useSelector } from "react-redux";
 import "../App.css";

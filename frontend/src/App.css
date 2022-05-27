@@ -234,6 +234,7 @@
   transition: all 0.3s ease;
   font-weight: 500;
 }
+
 .ProductScreen button:hover {
   background: darken(white, 2%);
   border: 1px solid #aedaa6;
@@ -288,3 +289,23 @@
 /* Warning Component section start Here */
 
 /* Warning Component section ends Here */
+
+/* Cart Screen */
+
+.CartScreen {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.CartScreen button {
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+}
+.CartScreen h2 {
+  opacity: 0.8;
+  padding: 20px;
+  color: green;
+}

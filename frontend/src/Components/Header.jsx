@@ -55,7 +55,7 @@ export const Header = () => {
           <button className="nav__btn">Search</button>
         </div>
         <div className="log">
-          <Link className="nav-btn-outline" to="cart">
+          <Link className="nav-btn-outline" to="/cart">
             <i className="fa fa-shopping-cart" style={{ margin: "5px" }} />
             Cart
           </Link>

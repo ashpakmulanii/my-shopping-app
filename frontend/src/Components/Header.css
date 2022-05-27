@@ -11,7 +11,7 @@
   width: 100%;
   margin: 0;
   padding: 15px;
-  position: fixed;
+  position: relative;
   background-image: linear-gradient(to right, gray, black);
   overflow: hidden;
   z-index: 1;
